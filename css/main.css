@@ -1,0 +1,124 @@
+body{
+    font-family: 'Anek Telugu', sans-serif;
+    color: #312a2a;
+}
+/***HOME***/
+#home{
+    padding-top: 40px;
+    background-color: #d3cccc;
+}
+
+.full-width{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+}
+
+#home .nav ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#home .nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 4em;
+}
+
+#home .nav ul li a:hover{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 4em;
+    font-style: italic;
+}
+
+footer{
+    display: flex;
+    justify-content:end;
+}
+
+footer p{
+    font-family: 'Ysabeau', sans-serif;
+    margin:0;
+    margin-right: 20px;
+}
+
+/***ABOUT***/
+#about{
+    background-color: #d3cccc;
+    font-size: 0.8em;
+}
+
+h1{
+
+    font-family: 'Philosopher', sans-serif;
+    font-size: 4em;
+    color: #000;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h3{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1em;
+}
+
+.mycv{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1em;
+    border-radius: 25px;
+    background: #312a2a;
+    padding: 5px;
+    color: #ffff;
+}
+
+.nav{
+    color: red;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content:end;
+}
+
+.nav a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #312a2a;
+}
+
+.nav a:hover{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #312a2a;
+    font-style: italic;
+}
+
+.about-desc{
+    width: 100%;
+    display: flex;
+}
+
+.motto{
+    width: 100%;
+}
+
+.bio-image img{
+    width: 40%;
+}
+
