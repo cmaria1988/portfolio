@@ -1,24 +1,27 @@
 body{
-    font-family: 'Anek Telugu', sans-serif;
-    color: #312a2a;
+    font-family: 'Anek Telugu', sans-serif; 
+    font-size: 1em;
+    background-color: #ece7e1; 
 }
+
 /***HOME***/
 #home{
-    padding-top: 40px;
-    background-color: #d3cccc;
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    max-width: 1200px;
+    color: #312a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .full-width{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: auto;
-
+    width: 100%;
 }
 
-.nav{
-    width: 100%;
-    display: flex;
+.short-intro{
+    margin-top: 10%;
 }
 
 #home .nav ul{
@@ -26,12 +29,16 @@ body{
     padding-left: 0;
 }
 
+#home .nav li{
+    line-height: 500%;
+}
+
 #home .nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
     font-family: 'Philosopher', sans-serif;
-    font-size: 4em;
+    font-size: 800%;
 }
 
 #home .nav ul li a:hover{
@@ -39,8 +46,127 @@ body{
     text-decoration: none;
     color: #000;
     font-family: 'Philosopher', sans-serif;
-    font-size: 4em;
+    font-size: 800%;
     font-style: italic;
+}
+
+/***ABOUT***/
+#about{
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    max-width: 1200px;
+    color: #312a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bio-image img{
+    width: 50%;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+}
+
+header{
+    margin-right: 5%;
+}
+
+header .nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #312a2a;
+}
+
+header .nav a:hover{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ece7e1;
+    border-radius: 2px;
+    background: #312a2a;
+    padding: 2px 2px 0 2px;
+}
+
+h1{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 400%;
+}
+
+h1 {
+    line-height: 100%;
+}
+
+.motto{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 150%;
+    padding: 0;
+    text-align: center;
+}
+
+.about-img{
+    text-align: center;
+}
+
+.about-img img{
+    border-radius: 5px;
+    background: #fff;
+    padding: 3px;
+}
+
+.mycv{
+    border-radius: 5px;
+    background:#312a2a;
+    padding: 3px;
+}
+
+.mycv a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/***CONTACT***/
+#contact{
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    max-width: 1200px;
+    color: #312a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: #312a2a;
+    padding-left: 20px;
+}
+
+.contact-info a:hover{
+    text-decoration: none;
+    color: #4d6a6d;
+}
+
+
+h2{
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.copyright{
+    font-family: 'Ysabeau', sans-serif;
+    margin-right: 5%;
+    display: flex;
+    justify-content:end;
+    align-items:flex-end;
 }
 
 footer{
@@ -48,77 +174,40 @@ footer{
     justify-content:end;
 }
 
-footer p{
-    font-family: 'Ysabeau', sans-serif;
-    margin:0;
-    margin-right: 20px;
+
+@media screen and (min-width:760px){
+
 }
 
-/***ABOUT***/
-#about{
-    background-color: #d3cccc;
-    font-size: 0.8em;
+@media screen and (min-width:1000px) {
+    /***HOME***/
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 10%;
+    }
+
+    .short-intro{
+        margin-bottom: 10%;
+        width: 20%;
+    }
+
+    /***ABOUT***/
+    .intro-about{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .motto{
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .about-img{
+        width: 100%;
+    }
+
 }
-
-h1{
-
-    font-family: 'Philosopher', sans-serif;
-    font-size: 4em;
-    color: #000;
-    margin: 0;
-}
-
-h2{
-    font-family: 'Ysabeau', sans-serif;
-    font-size: 1.5em;
-    margin: 0;
-}
-
-h3{
-    font-family: 'Ysabeau', sans-serif;
-    font-size: 1em;
-}
-
-.mycv{
-    font-family: 'Ysabeau', sans-serif;
-    font-size: 1em;
-    border-radius: 25px;
-    background: #312a2a;
-    padding: 5px;
-    color: #ffff;
-}
-
-.nav{
-    color: red;
-    font-family: 'Ysabeau', sans-serif;
-    font-size: 1.5em;
-    display: flex;
-    justify-content:end;
-}
-
-.nav a{
-    text-decoration: none;
-    margin-right: 10px;
-    color: #312a2a;
-}
-
-.nav a:hover{
-    text-decoration: none;
-    margin-right: 10px;
-    color: #312a2a;
-    font-style: italic;
-}
-
-.about-desc{
-    width: 100%;
-    display: flex;
-}
-
-.motto{
-    width: 100%;
-}
-
-.bio-image img{
-    width: 40%;
-}
-
