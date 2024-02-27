@@ -34,7 +34,6 @@ body{
 }
 
 #home .nav ul li a{
-    text-transform: uppercase;
     text-decoration: none;
     color: #000;
     font-family: 'Philosopher', sans-serif;
@@ -42,12 +41,15 @@ body{
 }
 
 #home .nav ul li a:hover{
-    text-transform: uppercase;
     text-decoration: none;
     color: #000;
     font-family: 'Philosopher', sans-serif;
     font-size: 800%;
     font-style: italic;
+}
+
+#home .nav ul li a.iam, #home .nav ul li a.maria{
+    color: #6f1d1b;
 }
 
 /***ABOUT***/
@@ -66,6 +68,11 @@ body{
     width: 50%;
 }
 
+.experience a, .skill a{
+    text-decoration: none;
+    color: #000;
+}
+
 header{
     display: flex;
     justify-content: end;
@@ -79,6 +86,7 @@ header .nav a{
     text-transform: uppercase;
     text-decoration: none;
     color: #312a2a;
+    font-weight:bold;
 }
 
 header .nav a:hover{
@@ -141,7 +149,7 @@ h1 {
 
 .contact-info{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
@@ -156,6 +164,51 @@ h1 {
     color: #4d6a6d;
 }
 
+/***PROJECTS***/
+#portfolio{
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    max-width: 1200px;
+    color: #312a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.project img{
+    width: 95%;
+    border: #84a59d solid 7px;
+}
+
+.project img:hover{
+    width: 95%;
+    border: #d8e2dc solid 7px;
+}
+
+.project ul{
+    padding-left: 0;
+}
+
+.projects ul li{
+    list-style: none;
+    padding-left: 0;
+}
 
 h2{
     font-family: 'Ysabeau', sans-serif;
@@ -165,7 +218,7 @@ h2{
     font-family: 'Ysabeau', sans-serif;
     margin-right: 5%;
     display: flex;
-    justify-content:end;
+    justify-content:center;
     align-items:flex-end;
 }
 
@@ -176,6 +229,12 @@ footer{
 
 
 @media screen and (min-width:760px){
+    .projects{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+    }
 
 }
 
@@ -208,6 +267,13 @@ footer{
 
     .about-img{
         width: 100%;
+    }
+
+    .projects{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
     }
 
 }
