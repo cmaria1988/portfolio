@@ -229,6 +229,10 @@ footer{
 
 
 @media screen and (min-width:760px){
+    .short-intro{
+        margin-top: 0;
+    }
+
     .projects{
         display: flex;
         justify-content: center;
@@ -240,6 +244,10 @@ footer{
 
 @media screen and (min-width:1000px) {
     /***HOME***/
+    .short-intro{
+        margin-top: 0;
+    }
+
     .content{
         display: flex;
         flex-direction: row;
