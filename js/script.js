@@ -6,10 +6,6 @@ const experienceElement = document.querySelector(".experience");
 const experienceList = document.querySelector(".experience-list");
 const experienceText = document.querySelector(".experience-text");
 
-const skillElement = document.querySelector(".skill");
-const skillList = document.querySelector(".skill-list");
-const skillText = document.querySelector(".skill-text");
-
 const experienceArray =["Bachelor degree in Information Technology",
                         "Master degree in Information System Development",
                         "Bootcamp in Front-End Developer",
@@ -18,24 +14,12 @@ const experienceArray =["Bachelor degree in Information Technology",
                         "Programming Tutor",
                         "Three years as web developer",
                         "Five years as IT lecturer"];
-const skillsArray = ["HTML",
-                    "CSS",
-                    "JavaScript",
-                    "React",
-                    "PHP",
-                    "C#",
-                    "REST API",
-                    "MySQL",
-                    "Git",
-                    "Wordpress",
-                    "Laravel",
-                    "CodeIgniter"];
 
 /***** HOME *****/
 /** Hello/About*/
 if(helloElement){
     helloElement.addEventListener("mouseover", function(){
-        helloElement.innerText = "About";
+        helloElement.innerText = "Halo,";
     });
 
 
@@ -47,7 +31,7 @@ if(helloElement){
 /**I am / Project */
 if(iamElement){
     iamElement.addEventListener("mouseover", function(){
-        iamElement.innerText = "Projects";
+        iamElement.innerText = "Saya";
         iamElement.style.color = "#000";
     });
 
@@ -61,7 +45,7 @@ if(iamElement){
 /** Maria / Contact */
 if(mariaElement){
     mariaElement.addEventListener("mouseover", function(){
-        mariaElement.innerText = "Contact";
+        mariaElement.innerText = "Maria";
         mariaElement.style.color = "#000";
     });
 
@@ -86,23 +70,6 @@ if(experienceElement){
     
     experienceElement.addEventListener("mouseleave", function(){
         experienceList.innerHTML = "";
-    });
-}
-
-/**SKILLS */
-if(skillElement){
-    skillElement.addEventListener("mouseenter", function(){
-        for(const skill of skillsArray){
-            const li = document.createElement("li");
-            li.innerText = skill;
-            skillList.append(li);
-        }
-        skillText.innerText="Skills";
-        skillElement.remove();
-    });
-        
-    skillElement.addEventListener("mouseleave", function(){
-        skillList.innerHTML = "";
     });
 }
 

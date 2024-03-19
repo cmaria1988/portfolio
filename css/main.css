@@ -4,9 +4,32 @@ body{
     background-color: #ece7e1; 
 }
 
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin-left: 2px;
+}
+
+.nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+}
+
 /***HOME***/
 #home{
     padding: 0;
+    padding-bottom: 60%;
     margin: 0;
     margin-left: 5%;
     max-width: 1200px;
@@ -16,6 +39,7 @@ body{
     justify-content: space-around;
 }
 
+
 .full-width{
     width: 100%;
 }
@@ -24,23 +48,23 @@ body{
     margin-top: 30%;
 }
 
-#home .nav ul{
+#home .intro-text ul{
     list-style-type: none;
     padding-left: 0;
 }
 
-#home .nav li{
+#home .intro-text li{
     line-height: 500%;
 }
 
-#home .nav ul li a{
+#home .intro-text ul li a{
     text-decoration: none;
     color: #000;
     font-family: 'Philosopher', sans-serif;
     font-size: 650%;
 }
 
-#home .nav ul li a:hover{
+#home .intro-text ul li a:hover{
     text-decoration: none;
     color: #000;
     font-family: 'Philosopher', sans-serif;
@@ -48,7 +72,7 @@ body{
     font-style: italic;
 }
 
-#home .nav ul li a.iam, #home .nav ul li a.maria{
+#home .intro-text ul li a.iam, #home .intro-text ul li a.maria{
     color: #6f1d1b;
 }
 
@@ -68,9 +92,12 @@ body{
     width: 50%;
 }
 
-.experience a, .skill a{
+.experience a, .mycv a{
     text-decoration: none;
     color: #000;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 3px 1px #888888;    
 }
 
 header{
@@ -124,16 +151,27 @@ h1 {
     padding: 3px;
 }
 
-.mycv{
-    border-radius: 5px;
-    background:#312a2a;
-    padding: 3px;
+/***SKILSS***/
+#skills{
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    max-width: 1200px;
+    color: #312a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.mycv a{
-    text-decoration: none;
-    color: #fff;
+#skills ul{
+    list-style-type: none;
 }
+
+.skill-title{
+    font-weight: bold;
+}
+
+
 
 /***CONTACT***/
 #contact{
@@ -150,7 +188,6 @@ h1 {
 .contact-info{
     display: flex;
     justify-content: flex-start;
-
 }
 
 .contact-info a{
@@ -215,6 +252,7 @@ h2{
 }
 
 .copyright{
+    margin-top: 100%;
     font-family: 'Ysabeau', sans-serif;
     margin-right: 5%;
     display: flex;
@@ -229,6 +267,10 @@ footer{
 
 
 @media screen and (min-width:760px){
+    .nav ul li {
+        margin-left: 10px;
+    }
+
     .short-intro{
         margin-top: 0;
     }
@@ -240,10 +282,18 @@ footer{
         flex-direction: row;
     }
 
+    .copyright{
+        margin-top: 60%;
+    }
 }
 
 @media screen and (min-width:1000px) {
     /***HOME***/
+
+    #home{
+        padding-bottom: 10%;
+    }
+
     .short-intro{
         margin-top: 0;
     }
@@ -284,4 +334,7 @@ footer{
         flex-direction: row;
     }
 
+    .copyright{
+        margin-top: 25%;
+    }
 }
